@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: crimson;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+p{
+  color:blue;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+form input, form button {
+  padding: 10px;
+  font-size: 16px;
+}
+form button {
+  background-color: crimson;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+form button:hover {
+  background-color:rgb(220, 45, 80);
+}
+#studentList {
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.table-wrapper {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.actions button {
+  margin-right: 5px;
+}

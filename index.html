@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Registration System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--header section where heading and description is present-->
+  <header>
+    <h1>Student Registration System</h1>
+    <p>Register students and manage their information easily!</p>
+  </header>
+<!--main section where form is present to take input from the user-->
+  <main>
+    <form id="registrationForm">
+      <input type="text" id="name" placeholder="Student Name" required />
+      <input type="text" id="studentId" placeholder="Student ID" required />
+      <input type="email" id="email" placeholder="Email ID" required />
+      <input type="text" id="contact" placeholder="Contact No" required />
+      <input type="text" id="class" placeholder="Class" required />
+      <input type="text" id="address" placeholder="Address" required />
+      <button type="submit">Add Student</button>
+    </form>
+<!--section where registered students will appear-->
+    <section id="studentList">
+      <h2>Registered Students</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>ID</th>
+              <th>Email</th>
+              <th>Contact</th>
+              <th>Class</th>
+              <th>Address</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <!-- Student rows appear here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
